@@ -114,7 +114,7 @@ void loop() {
  // Declare writeModeStartTime variable
   unsigned long writeModeStartTime;
 // Check if the scanned UID is 03311c1c
-  if (payload == "03311c1c") {
+  if (payload == "03311c1c") { // Rest of your existing code for access permitted
     lcd.clear();
     lcd.print ("Access permitted");
     digitalWrite(greenLedPin, HIGH);
@@ -166,7 +166,7 @@ void loop() {
         }
         keyScanned = false;
     }
-    else{
+    else{ // Rest of your existing code for access denied
     lcd.clear();
     lcd.print ( "Access denied" );
     digitalWrite(redLedPin, HIGH);   
