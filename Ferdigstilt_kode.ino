@@ -117,7 +117,7 @@ void loop() {
   if (payload == "03311c1c") {
     lcd.clear();
     lcd.print ("Access permitted");
-    digitalWrite(greenLedPin, HIGH);    // Rest of your existing code for access permitted
+    digitalWrite(greenLedPin, HIGH);
     myServo.write(0);  // Set the servo to 90 degrees
     delay(1000);
     myServo.write(180);// Set the servo back to original position
@@ -169,7 +169,7 @@ void loop() {
     else{
     lcd.clear();
     lcd.print ( "Access denied" );
-    digitalWrite(redLedPin, HIGH);      // Rest of your existing code for access denied
+    digitalWrite(redLedPin, HIGH);   
     delay(2000);
     lcd.clear();
     lcd.print( "Place chip here" );
